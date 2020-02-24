@@ -1,0 +1,6 @@
+.test {
+  background-color: red;
+  &__title {
+    text-transform: uppercase;
+  }
+}

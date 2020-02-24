@@ -1,11 +1,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
+  font-family: $font-heading;
+  color: $font-dark;
 }
 
 img {
@@ -18,6 +19,10 @@ a {
   color: $mainOrange;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
