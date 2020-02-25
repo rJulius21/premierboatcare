@@ -1,0 +1,11 @@
+.img-row {
+  display: flex;
+  justify-content: space-evenly;
+
+  &__img {
+
+    &--butterfly {
+      height: 20rem;
+    }
+  }
+}
