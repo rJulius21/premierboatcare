@@ -3,18 +3,31 @@ h1 {
   font: $font-heading-default;
 }
 
+h2 {
+  font: $font-sub-heading-default;
+}
+
+h3 {
+  font: $font-panel-heading-default;
+  letter-spacing: 1px;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
   font: $font-text-decorative;
 }
 
 p {
-  margin-bottom: 2rem;
   font: $font-text-default;
 }
 
 ul {
   list-style-type: none;
+}
+
+li {
+  font: $font-text-default;
 }
 
 /*

@@ -26,8 +26,11 @@ img {
 }
 
 .wrapper {
-  width: 120rem;
-  margin: 2rem auto;
+  max-width: 120rem;
   background-color: $color-primary-light;
   box-shadow: $shadow-dark-lg;
+
+  @mixin atMedium {
+    margin: 3rem auto;
+  }
 }

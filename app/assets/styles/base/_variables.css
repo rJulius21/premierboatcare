@@ -8,14 +8,18 @@ $color-dark: #23211b;
 $color-light: #ededed;
 
 $shadow-dark-lg: 0 0 3rem 0 $color-dark;
-$shadow-dark-lg: 0 0 1.6rem 0 $color-dark;
+$shadow-dark-sm: 0 0 1rem 0 $color-dark;
 
 
 $font-color-dark: #3b372d;
 $font-color-light: #f3f0e6;
 
 $font-heading-default: 2.8rem/1.1 'Poiret One', sans-serif;
-$font-text-default: 2rem/1.4 'Arima Madurai', sans-serif;
+$font-sub-heading-default: 2.6rem/1.1 'Poiret One', sans-serif;
+$font-panel-heading-default: 2.4rem/1.1 'Poiret One', sans-serif;
+$font-text-default: 1.8rem/1.4 'Poiret One', sans-serif;
 $font-text-decorative: 2rem/1.4 'Sofia', sans-serif;
+$font-text-decorative-sm: 1.6rem/1.4 'Sofia', sans-serif;
+$indent: 2rem;
 
 $transition-default: all .2s ease-in;
