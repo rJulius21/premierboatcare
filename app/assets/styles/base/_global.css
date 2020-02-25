@@ -13,6 +13,10 @@ html {
 }
 
 body {
+  background-image: radial-gradient($color-primary-light, $color-primary-dark);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $font-color-dark;
 }
 
@@ -22,5 +26,8 @@ img {
 }
 
 .wrapper {
-
+  width: 120rem;
+  margin: 2rem auto;
+  background-color: $color-primary-light;
+  box-shadow: $shadow-dark-lg;
 }

@@ -1,22 +1,45 @@
 .header {
+  padding: 1rem 0;
 
   &__title {
+    text-align: center;
 
+    span {
+      font-size: 4.5rem;
+    }
   }
 
   &__nav {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__nav-list {
-
+    display: flex;
+    padding: 1rem;
   }
 
   &__nav-item {
-
+    
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
   &__nav-link {
-    
+    padding: 2px 12px;
+    color: $font-color-dark;
+
+    transition: $transition-default;
+
+    &:hover {
+      background-color: $color-primary-dark;
+      color: $color-primary;
+    }
+
+    &--active {
+      border-bottom: 2px solid $font-color-dark;
+    }
   }
 }

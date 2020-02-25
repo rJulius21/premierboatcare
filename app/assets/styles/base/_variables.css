@@ -1,19 +1,4 @@
 
-/*
-
-    font-family: 'Poiret One', ;
-    font-family: 'Cookie', ;
-    font-family: 'Handlee', ;
-    font-family: 'Josefin Slab', ;
-    font-family: 'Economica', ;
-    font-family: 'Arima Madurai', ;
-    font-family: 'Mali', ;
-    font-family: 'Sofia', ;
-    font-family: 'Montez', ;
-    font-family: 'Spirax', ;
-    font-family: 'Henny Penny', ;
-
-*/
 
 $color-primary-light: #e4dcc5;
 $color-primary: #d6c9a4;
@@ -22,10 +7,15 @@ $color-primary-dark: #b0a587;
 $color-dark: #23211b;
 $color-light: #ededed;
 
+$shadow-dark-lg: 0 0 3rem 0 $color-dark;
+$shadow-dark-lg: 0 0 1.6rem 0 $color-dark;
+
 
 $font-color-dark: #3b372d;
 $font-color-light: #f3f0e6;
 
-$font-heading-default: 2.8rem/1.2 'Poiret One', sans-serif;
+$font-heading-default: 2.8rem/1.1 'Poiret One', sans-serif;
 $font-text-default: 2rem/1.4 'Arima Madurai', sans-serif;
 $font-text-decorative: 2rem/1.4 'Sofia', sans-serif;
+
+$transition-default: all .2s ease-in;
