@@ -1,0 +1,14 @@
+
+h1 {
+  font: $font-heading-default;
+}
+
+a {
+  text-decoration: none;
+  font: $font-text-decorative;
+}
+
+p {
+  margin-bottom: 2rem;
+  font: $font-text-default;
+}

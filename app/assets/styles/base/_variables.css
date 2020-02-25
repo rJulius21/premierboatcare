@@ -1,7 +1,31 @@
-$mainBlue: #2f5572;
-$mainOrange: #d59541;
 
-$font-dark: #333;
-$font-light: #ddd;
-$font-heading: 'Roboto', sans-serif;
-$font-text: 'Roboto', sans-serif;
+/*
+
+    font-family: 'Poiret One', ;
+    font-family: 'Cookie', ;
+    font-family: 'Handlee', ;
+    font-family: 'Josefin Slab', ;
+    font-family: 'Economica', ;
+    font-family: 'Arima Madurai', ;
+    font-family: 'Mali', ;
+    font-family: 'Sofia', ;
+    font-family: 'Montez', ;
+    font-family: 'Spirax', ;
+    font-family: 'Henny Penny', ;
+
+*/
+
+$color-primary-light: #e4dcc5;
+$color-primary: #d6c9a4;
+$color-primary-dark: #b0a587;
+
+$color-dark: #23211b;
+$color-light: #ededed;
+
+
+$font-color-dark: #3b372d;
+$font-color-light: #f3f0e6;
+
+$font-heading-default: 2.8rem/1.2 'Poiret One', sans-serif;
+$font-text-default: 2rem/1.4 'Arima Madurai', sans-serif;
+$font-text-decorative: 2rem/1.4 'Sofia', sans-serif;
