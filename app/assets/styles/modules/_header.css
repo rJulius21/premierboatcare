@@ -1,8 +1,11 @@
 .header {
-  padding: 1rem 0;
+  padding-bottom: 1rem;
   border-bottom: 10px solid $color-primary-dark;
 
   &__title {
+    padding: 2rem;
+    background-color: $font-color-dark;
+    color: $font-color-light;
     text-align: center;
 
     span {
