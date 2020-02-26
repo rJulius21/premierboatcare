@@ -4,9 +4,10 @@
 
   &__title {
     padding: 2rem;
-    background-color: $font-color-dark;
+    background-color: $color-dark;
     color: $font-color-light;
     text-align: center;
+    letter-spacing: 2px;
 
     span {
       font-size: 4.5rem;

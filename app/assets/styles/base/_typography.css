@@ -5,11 +5,17 @@ h1 {
 
 h2 {
   font: $font-sub-heading-default;
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 h3 {
   font: $font-panel-heading-default;
   letter-spacing: 1px;
+}
+
+h4 {
+  font: $font-panel-sub-heading-default;
 }
 
 a {
@@ -30,21 +36,33 @@ li {
   font: $font-text-default;
 }
 
+::selection {
+  background-color: $font-color-dark;
+  color: $font-color-light;
+}
+
+
+
+
+
+
+//////////////////// Below this line is used for font testing purposes
+
 /*
 
-//     font-family: 'Poiret One', ;
-//     font-family: 'Cookie', ;
-//     font-family: 'Handlee', ;
-//     font-family: 'Josefin Slab', ;
-//     font-family: 'Economica', ;
-//     font-family: 'Arima Madurai', ;
-//     font-family: 'Mali', ;
-//     font-family: 'Sofia', ;
-//     font-family: 'Montez', ;
-//     font-family: 'Spirax', ;
-//     font-family: 'Henny Penny', ;
+     font-family: 'Poiret One', ;
+     font-family: 'Cookie', ;
+     font-family: 'Handlee', ;
+     font-family: 'Josefin Slab', ;
+     font-family: 'Economica', ;
+     font-family: 'Arima Madurai', ;
+     font-family: 'Mali', ;
+     font-family: 'Sofia', ;
+     font-family: 'Montez', ;
+     font-family: 'Spirax', ;
+     font-family: 'Henny Penny', ;
 
-// */
+ */
 
 .poiret-one {
   font-family: 'Poiret One', sans-serif;
