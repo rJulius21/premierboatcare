@@ -36,8 +36,13 @@
   &__nav-link {
     padding: 2px 12px;
     color: $font-color-dark;
+    font-size: 1.6rem;
 
     transition: $transition-default;
+
+    @mixin atSmall {
+      font-size: 2rem;
+    }
 
     &:hover {
       background-color: $color-primary-dark;
