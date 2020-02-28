@@ -67,19 +67,11 @@
     }
   }
 
-  &__nav-item {
-
-    
-  }
-
   &__nav-link {
+    font: $font-text-decorative-sm;
 
     &:hover {
       color: $color-primary-dark
-    }
-
-    @mixin atSmall {
-      font: $font-text-decorative-sm;
     }
 
     @mixin atMedium {
