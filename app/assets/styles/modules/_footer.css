@@ -37,6 +37,7 @@
 
   &__middle {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -77,5 +78,15 @@
     @mixin atMedium {
       font: $font-text-decorative;
     }
+  }
+}
+
+.developer {
+  color: inherit;
+  font-family: 'handlee', sans-serif;
+  font-size: 1.4rem;
+
+  &:hover {
+    color: green;
   }
 }
