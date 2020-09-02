@@ -99,7 +99,7 @@
     margin: 2rem auto 0;
     padding: 1rem;
     background-color: $font-color-dark;
-    box-shadow: $shadow-light-sm;
+    box-shadow: $shadow-dark-sm;
     color: $color-primary;
     text-align: center;
 

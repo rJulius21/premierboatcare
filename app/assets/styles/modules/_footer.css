@@ -1,18 +1,15 @@
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 2rem 0;
   border-top: 10px solid $color-primary-dark;
 
   @mixin atSmall {
-    flex-direction: row;
     justify-content: space-around;
   }
 
-  &__left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__icons {
   }
 
   &__social-link {
@@ -35,10 +32,9 @@
     }
   }
 
-  &__middle {
+  &__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -50,35 +46,7 @@
     text-align: center;
   }
 
-  &__right { 
-    display: flex;
-  }
-
-  &__nav {
-    width: 100%;
-  }
-
-  &__nav-list {
-    display: flex;
-    justify-content: space-evenly;
-
-    @mixin atSmall {
-      flex-direction: column;
-      text-align: center;
-    }
-  }
-
-  &__nav-link {
-    font: $font-text-decorative-sm;
-
-    &:hover {
-      color: $color-primary-dark
-    }
-
-    @mixin atMedium {
-      font: $font-text-decorative;
-    }
-  }
+  
 }
 
 .developer {
