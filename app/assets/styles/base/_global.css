@@ -17,20 +17,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: $font-color-dark;
 }
 
 img {
   max-width: 100%;
   height: auto;
-}
-
-.wrapper {
-  max-width: 120rem;
-  background-color: $color-primary-light;
-  box-shadow: $shadow-dark-lg;
-
-  @mixin atMedium {
-    margin: 3rem auto;
-  }
 }
