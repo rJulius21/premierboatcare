@@ -1,0 +1,17 @@
+.vid-gallery{
+  position: relative;
+  width: 100%;
+  
+  &__grid{ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 16rem 0 2rem;
+  }
+
+  &__item{ background-color: rgb(0, 0, 0);
+    width: 59rem;
+    height: 33rem;
+    box-shadow: $bs-dark-sm;
+  }
+}

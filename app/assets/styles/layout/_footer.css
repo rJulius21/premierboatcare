@@ -1,4 +1,153 @@
 .footer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  
   width: 100%;
-  background-color: $bg-dark;
+  background-color: $color-secondary-light;
+  box-shadow: $bs-dark-lg;
+  
+  &__body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding: 3rem 10rem;
+  }
+
+  &__img-box{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+  }
+
+  &__img{ 
+    display: flex;
+    height: 100%;
+  }
+
+  &__pages-nav{
+    
+  }
+
+  &__pages-list{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  &__pages-item{
+    
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__pages-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 5rem;
+    padding: 5px 1rem;
+    background-color: $color-primary;
+    color: $color-primary-light;
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    transition: all .2s ease-in;
+
+    &:hover{
+      transform: scale(1.04);
+      box-shadow: $bs-dark-sm;
+    }
+  }
+
+  &__cta-nav{
+    
+  }
+
+  &__cta-list{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  &__cta-item{
+    &:not(:last-child){
+      margin-bottom: 1rem;
+    }
+  }
+  
+  &__cta-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 5rem;
+    padding: 1rem;
+    background-color: $color-primary-dark;
+    color: $color-secondary;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    transition: all .2s ease-in;
+
+    &:hover{
+      transform: scale(1.04);
+      box-shadow: $bs-dark-sm;
+    }
+    
+    &--secondary{
+      color: $color-primary-dark;
+      border: 3px solid $color-primary-dark;
+      background-color: transparent;
+      font-weight: 600;
+    }
+  }
+
+  &__social-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    width: 100%;
+  }
+
+  &__fb-link{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  &__fb-icon{
+    fill: $color-primary;
+  }
+
+  &__social-text{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-primary-dark;
+  }
+
+  &__bottom-stripe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 1rem 10rem;
+    background-color: $color-secondary;
+  }
+
+  &__copy{
+    
+  }
+
+  &__developer{
+    margin-top: 1rem;
+  }
 }

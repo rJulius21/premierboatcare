@@ -1,24 +1,33 @@
 
 /*  COLORS  */
-$color-primary-light: #e4dcc5;
-$color-primary: #d6c9a4;
-$color-primary-dark: #b0a587;
+$color-primary-light: #e7fef9;
+$color-primary: #5e63fe;
+$color-primary-dark: #1d1d81;
 
-$bg-dark: #23211b;
-$bg-light: #ededed;
+$color-secondary: #39ffbc;
+$color-secondary-light: #ccffd8;
 
-$text-dark: #3b372d;
-$text-light: #f3f0e6;
+$bg-dark: rgb(7, 7, 7);
+$bg-light: rgb(255, 255, 255);
+
+/*  TEXT COLORS  */
+$tc-section-heading: #5e63fe;
+$tc-white: #f5feff;
+$tc-body-light: rgb(232, 226, 255);
+$tc-body-dark: rgb(13, 7, 36);
 
 /*  TEXT SHADOWS  */
 $ts-dark: 1px 1px 2px $bg-dark;
 $ts-light: 1px 1px 2px $bg-light;
 
 /*  BOX SHADOWS  */
-$bs-dark-lg: 0 0 3rem 0 $bg-dark;
-$bs-dark-sm: 0 0 1rem 0 $bg-dark;
-$bs-light-lg: 0 0 3rem 0 $bg-light;
-$bs-light-sm: 0 0 1rem 0 $bg-light;
+$s-dark: rgba(7, 7, 7, 0.3);
+$s-light: rgba(255, 255, 255, 0.2);
+
+$bs-dark-lg: 0 0 3rem 0 $s-dark;
+$bs-dark-sm: 0 0 1rem 0 $s-dark;
+$bs-light-lg: 0 0 3rem 0 $s-light;
+$bs-light-sm: 0 0 1rem 0 $s-light;
 
 /*  FONT STYLES  */
 $text-heading: 2.8rem/1.1 'Lato', sans-serif;

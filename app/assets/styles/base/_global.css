@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-image: radial-gradient($color-primary-light, $color-primary-dark);
+  background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary, $color-primary);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;

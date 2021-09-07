@@ -1,0 +1,52 @@
+.content-section{ 
+  position: relative;
+  margin-top: 10rem;
+  padding-top: 1rem;
+  background-color: $color-primary-light;
+  box-shadow: $bs-dark-lg;
+
+  &__heading{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    clip-path: polygon(0 0, 90% 0, 0 100%);
+
+    width: 100%;
+    height: 20rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    background-image: linear-gradient($color-secondary-light, $color-secondary);
+
+  }
+
+  &__title{
+    color: $color-primary;
+    font-size: 6rem;
+  }
+
+  &__body{
+    width: 100%;
+    padding: 0 10rem;
+  }
+
+  &__panel{
+
+    &--full{
+
+    }
+
+    &--half{
+      
+    }
+
+    &--third{
+      
+    }
+
+    &--quarter{
+      
+    }
+
+  }
+
+}

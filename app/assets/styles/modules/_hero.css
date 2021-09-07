@@ -1,0 +1,22 @@
+.hero{
+   
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: 10px;
+
+    padding: 10px;
+    
+  }
+
+  &__item{
+
+    &--padded{
+      padding: 3rem;
+    }
+  }
+
+  &__img {
+    display: flex;
+  }
+}
