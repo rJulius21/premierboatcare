@@ -23,20 +23,22 @@
     }
   }
 
-  &__img-box{ 
+  &__img-box{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20rem;
+    padding: 5px;
   }
 
   &__img{ 
     display: flex;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   &__pages-nav{
-    
+    display: flex;
+    align-items: center;
   }
 
   &__pages-list{
@@ -73,8 +75,9 @@
     }
   }
 
-  &__cta-nav{
-    
+  &__cta{ 
+    display: flex;
+    align-items: center;
   }
 
   &__cta-list{
@@ -137,6 +140,11 @@
     height: 5rem;
     width: 5rem;
     fill: $color-primary;
+
+    @mixin atLarge {
+      height: 10rem;
+    width: 10rem;
+    }
   }
 
   &__social-text{
@@ -144,6 +152,7 @@
     font-size: 1.8rem;
     font-weight: 600;
     color: $color-primary-dark;
+    text-align: center;
   }
 
   &__bottom-stripe{

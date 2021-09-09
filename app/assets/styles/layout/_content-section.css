@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 2rem;
 
-  min-height: 60rem;
+  min-height: 20rem;
   padding-top: 8rem;
   background-color: $bg-content-section;
   box-shadow: $bs-dark-lg;
