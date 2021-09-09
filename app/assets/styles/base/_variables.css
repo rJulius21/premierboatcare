@@ -10,6 +10,8 @@ $color-secondary-light: #ccffd8;
 $bg-dark: rgb(7, 7, 7);
 $bg-light: rgb(255, 255, 255);
 
+$bg-content-section: rgba($color-primary-light, .5);
+
 /*  TEXT COLORS  */
 $tc-section-heading: #5e63fe;
 $tc-white: #f5feff;

@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-    padding: 16rem 0 2rem;
+    padding: 0rem 0 2rem;
   }
 
   &__item{ background-color: rgb(0, 0, 0);
