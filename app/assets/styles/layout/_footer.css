@@ -1,18 +1,26 @@
 .footer{
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 2rem;
   
   width: 100%;
   background-color: $color-secondary-light;
   box-shadow: $bs-dark-lg;
   
+  @mixin atLarge{
+    margin-bottom: 10rem;
+  }
+  
   &__body{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
-    padding: 3rem 10rem;
+    padding: 1rem;
+
+    @mixin atLarge{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 3rem 10rem;
+    }
   }
 
   &__img-box{ 
@@ -95,6 +103,7 @@
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
     transition: all .2s ease-in;
+    text-align: center;
 
     &:hover{
       transform: scale(1.04);
@@ -113,6 +122,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   
     width: 100%;
   }
@@ -124,6 +134,8 @@
   }
 
   &__fb-icon{
+    height: 5rem;
+    width: 5rem;
     fill: $color-primary;
   }
 
@@ -139,8 +151,12 @@
     flex-direction: column;
     align-items: center;
     
-    padding: 1rem 10rem;
+    padding: 1rem;
     background-color: $color-secondary;
+    
+    @mixin atLarge {
+      padding: 1rem 10rem;
+    }
   }
 
   &__copy{

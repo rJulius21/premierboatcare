@@ -2,17 +2,27 @@
    
   &__grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(2, 1fr) ;
     grid-gap: 10px;
 
     padding: 10px;
     
+    @mixin atLarge{
+      grid-template-columns: repeat(3, 1fr) ;
+    }
   }
 
   &__item{
 
+    grid-column: span 1;
+
     &--padded{
+      grid-column: span 2;
       padding: 3rem;
+
+      @mixin atLarge{
+        grid-column: span 1;
+      }
     }
   }
 

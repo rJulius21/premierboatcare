@@ -2,29 +2,44 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   
   width: 100%;
-  margin-top: 10rem;
   background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light);
   box-shadow: $bs-dark-lg;
+  
+  @mixin atLarge{
+    align-items: stretch;
+
+    margin-top: 10rem;
+  }
 
   &__top-bar{
     position: sticky;
     top: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     
     width: 100%;
-    height: 112px;
-    padding: 0 10rem;
+    padding: 1rem;
     background-color: $color-primary-dark;
+    
+    @mixin atLarge{
+      flex-direction: row;
+      padding: 0 10rem;
+      height: 112px;
+    }
   }
 
   &__title{
-    margin-right: 10rem;
     color: $tc-white;
     font-size: 2rem;
     transition: transform .2s ease-in;
+    
+    @mixin atLarge{
+      margin-right: 10rem;
+    }
 
     &:hover{
       transform: scale(1.04);

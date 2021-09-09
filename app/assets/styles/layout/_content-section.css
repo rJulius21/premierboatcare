@@ -1,47 +1,61 @@
 .content-section{ 
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: space-between;
-
-  margin-top: 10rem;
-  padding-top: 12rem;
-  background-color: $bg-content-section;
-  box-shadow: $bs-dark-lg;
+  margin-top: 2rem;
 
   min-height: 60rem;
+  padding-top: 8rem;
+  background-color: $bg-content-section;
+  box-shadow: $bs-dark-lg;
+  
+  @mixin atLarge{
+    padding-top: 12rem;
+    margin-top: 10rem;
+  }
 
   &__heading{
     position: absolute;
     top: 0;
     z-index: 1;
-    clip-path: polygon(0 0, 90% 0, 0 100%);
-
+    
     width: 100%;
-    height: 20rem;
-    padding-top: 5rem;
-    padding-left: 10rem;
+    height: 7rem;
+    padding-left: 2rem;
+    padding-top: 1.6rem;
     background-image: linear-gradient($color-secondary-light, $color-secondary);
-
+    
+    @mixin atLarge{
+      clip-path: polygon(0 0, 90% 0, 0 100%);
+      height: 20rem;
+      padding-top: 5rem;
+      padding-left: 10rem;
+    }
   }
 
   &__title{
     color: $color-primary;
-    font-size: 6rem;
+    font-size: 3rem;
+    
+    @mixin atLarge{
+      font-size: 6rem;
+    }
   }
 
   &__body{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     width: 100%;
-    padding: 0 10rem;
+    padding: 1rem;
+
+    @mixin atLarge{
+      padding: 0 10rem;
+    }
   }
 
   &__panel{
     background-color: red;
-    border: 5px solid green;
+    border: 1px solid green;
     height: 40rem;
 
     &--full{
@@ -53,7 +67,7 @@
     }
 
     &--third{
-      width: 33%;
+      width: 33.3%;
     }
 
     &--quarter{

@@ -1,7 +1,11 @@
 .content-wrapper{
   position: relative;
   
-  width: 140rem;
+  width: 98%;
   margin: 0 auto;
   opacity: 1;
+
+  @mixin atLarge{
+    width: 140rem;
+  }
 }

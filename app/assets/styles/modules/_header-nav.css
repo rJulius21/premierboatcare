@@ -1,16 +1,27 @@
 .header-nav{
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  
+  @mixin atLarge{
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   &__pages-list{
     display: flex;
+    
+    padding: 1rem;
   }
 
   &__pages-item{
     
     &:not(:last-child){
-      margin-right: 2rem;
+      margin-right: 1rem;
+      
+      @mixin atLarge{
+        margin-right: 2rem;
+      }
     }
   }
 
@@ -33,6 +44,7 @@
 
   &__cta-list{
     display: flex;
+    justify-content: center;
   }
 
   &__cta-item{
