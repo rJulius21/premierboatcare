@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   
+  margin-top: 2rem;
   width: 100%;
   background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light);
   box-shadow: $bs-dark-lg;
@@ -25,7 +26,7 @@
     padding: 1rem;
     background-color: $color-primary-dark;
     
-    @mixin atLarge{
+    @mixin atMedium{
       flex-direction: row;
       padding: 0 10rem;
       height: 112px;
@@ -37,7 +38,7 @@
     font-size: 2rem;
     transition: transform .2s ease-in;
     
-    @mixin atLarge{
+    @mixin atMedium{
       margin-right: 10rem;
     }
 

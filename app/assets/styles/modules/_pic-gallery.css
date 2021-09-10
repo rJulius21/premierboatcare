@@ -1,27 +1,41 @@
 .pic-gallery{
+  width: 100%;
 
   &__feature-box{
-    height: 80rem;
-    margin: -12rem -10rem 0;
+    display: flex;
+
+    width: 100%;
     background-color: black;
     padding: 1px;
+    
+    @mixin atLarge{
+      margin: -12rem -10rem 0;
+
+    }
   }
 
   &__feature-img{
     display: block;
     margin: 0 auto;
-    height: 100%;
+    width: 100%;
     box-shadow: $bs-dark-lg;
   }
 
   &__grid{
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-gap: 2rem;
-    padding: 2rem 10rem;
-
-    margin: 0 -10rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    
+    padding: 1rem;
     background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light);
+
+    @mixin atLarge{
+      grid-template-columns: repeat(10, 1fr);
+      grid-gap: 2rem;
+      padding: 2rem 10rem;
+
+      margin: 0 -10rem;
+    }
   }
 
   &__item{

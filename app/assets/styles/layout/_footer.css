@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   
   width: 100%;
   background-color: $color-secondary-light;
@@ -17,7 +18,7 @@
 
     padding: 1rem;
 
-    @mixin atLarge{
+    @mixin atMedium{
       grid-template-columns: 1fr 1fr 1fr 1fr;
       padding: 3rem 10rem;
     }
@@ -28,12 +29,15 @@
     align-items: center;
     justify-content: center;
     padding: 5px;
+
+    @mixin atSmall{
+      height: 21rem;
+    }
   }
 
   &__img{ 
     display: flex;
-    width: 100%;
-    height: auto;
+    max-height: 100%;
   }
 
   &__pages-nav{

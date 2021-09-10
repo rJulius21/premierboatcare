@@ -2,8 +2,8 @@
   position: relative;
   margin-top: 2rem;
 
-  min-height: 20rem;
   padding-top: 8rem;
+  padding-bottom: 2rem;
   background-color: $bg-content-section;
   box-shadow: $bs-dark-lg;
   
@@ -23,6 +23,11 @@
     padding-top: 1.6rem;
     background-image: linear-gradient($color-secondary-light, $color-secondary);
     
+    @mixin atSmall{
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+      height: 9rem;
+    }
+
     @mixin atLarge{
       clip-path: polygon(0 0, 90% 0, 0 100%);
       height: 20rem;
@@ -43,7 +48,7 @@
   &__body{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     width: 100%;
     padding: 1rem;
@@ -54,24 +59,58 @@
   }
 
   &__panel{
-    background-color: red;
-    border: 1px solid green;
-    height: 40rem;
+    
 
     &--full{
       width: 100%;
     }
 
     &--half{
-      width: 50%;
+      width: 100%;
+
+      @mixin atSmall{
+        width: 100%;
+      }
+
+      @mixin atMedium{
+        width: 50%;
+      }
+
+      @mixin atLarge{
+        width: 50%;
+      }
     }
 
     &--third{
-      width: 33.3%;
+      width: 100%;
+
+      @mixin atSmall{
+        width: 50%;
+      }
+
+      @mixin atMedium{
+        width: 33.3%;
+      }
+
+      @mixin atLarge{
+        width: 33.3%;
+      }
     }
 
     &--quarter{
-      width: 25%;
+      width: 50%;
+
+      @mixin atSmall{
+        width: 50%;
+      }
+
+      @mixin atMedium{
+        width: 25%;
+      }
+
+      @mixin atLarge{
+        width: 25%;
+      }
     }
 
   }

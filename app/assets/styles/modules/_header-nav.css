@@ -3,9 +3,14 @@
   display: flex;
   flex-direction: column;
   
-  @mixin atLarge{
+  @mixin atSmall{
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  @mixin atMedium{
+    
   }
 
   &__pages-list{

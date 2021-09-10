@@ -4,14 +4,22 @@
   
   &__grid{ 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1rem;
     padding: 0rem 0 2rem;
+
+    @mixin atLarge{
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__item{ background-color: rgb(0, 0, 0);
-    width: 59rem;
-    height: 33rem;
+    width: 100%;
     box-shadow: $bs-dark-sm;
+
+    @mixin atLarge{
+      width: 59rem;
+      height: 33rem;
+    }
   }
 }
