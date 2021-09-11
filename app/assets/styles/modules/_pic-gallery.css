@@ -21,13 +21,22 @@
     box-shadow: $bs-dark-lg;
   }
 
+  &__grid-container{ background-color: red;
+    width: 100%;
+    overflow: hidden;
+  }
+
   &__grid{
+    overflow: scroll;
+    width: 200%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(8, 50px);
     grid-gap: 1rem;
     
     padding: 1rem;
-    background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light);
+    /* background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light); */
+
+    transform: translateX(-30rem);
 
     @mixin atLarge{
       grid-template-columns: repeat(10, 1fr);

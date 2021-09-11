@@ -1,15 +1,23 @@
 .background-wrapper{
   opacity: .85;
-
-  background-image: url('assets/images/bg2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  
   padding: 2rem 0;
-
+  
   @mixin atLarge{
     padding: 10rem 0;
+  }
+
+  &__img{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('assets/images/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   &__gradient{
