@@ -10,6 +10,7 @@
   
   @mixin atLarge{
     margin-bottom: 10rem;
+    margin-top: 10rem;
   }
   
   &__body{

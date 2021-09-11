@@ -15,6 +15,7 @@ a {
 
 p {
   font: $text-body;
+  line-height: 1.4;
 }
 
 ul {

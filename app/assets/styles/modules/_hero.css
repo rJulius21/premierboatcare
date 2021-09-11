@@ -16,7 +16,7 @@
 
     grid-column: span 1;
 
-    &--padded{ 
+    &--padded{ background-color: rgb(32, 10, 112);
       grid-column: span 2;
       padding: 3rem;
 
