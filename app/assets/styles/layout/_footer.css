@@ -2,14 +2,12 @@
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   
   width: 100%;
   background-color: $color-secondary-light;
   box-shadow: $bs-dark-lg;
   
   @mixin atLarge{
-    margin-bottom: 10rem;
     margin-top: 10rem;
   }
   

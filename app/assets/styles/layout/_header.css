@@ -4,15 +4,12 @@
   flex-direction: column;
   justify-content: center;
   
-  margin-top: 2rem;
   width: 100%;
   background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light);
   box-shadow: $bs-dark-lg;
   
   @mixin atLarge{
     align-items: stretch;
-
-    margin-top: 10rem;
   }
 
   &__top-bar{

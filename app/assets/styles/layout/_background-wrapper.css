@@ -1,6 +1,17 @@
 .background-wrapper{
   opacity: .85;
 
+  background-image: url('assets/images/bg2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2rem 0;
+
+  @mixin atLarge{
+    padding: 10rem 0;
+  }
+
   &__gradient{
     position: fixed;
     top: 0;
@@ -9,7 +20,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary, $color-primary);
     opacity: .6;
   }
+  
 }
