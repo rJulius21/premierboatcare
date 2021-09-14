@@ -1,3 +1,154 @@
-.services {
+.service { 
+  position: relative;
+  overflow: hidden;
+  box-shadow: $bs-dark-sm;
+  border-bottom-left-radius: 14rem;
+  background-color: $color-primary-dark;
+
+    &:first-child{
+
+      @mixin atSmall{
+        margin-top: 2rem;
+      }
+
+      @mixin atLarge{
+        margin-top: 4rem;
+      }
+    }
   
+  @mixin atMedium{
+    margin: 0 2rem;
+  }
+
+  &:not(:last-child){
+    margin-bottom: 1rem;
+
+    @mixin atSmall{
+      margin-bottom: 2rem;
+    }
+  }
+
+  &::before{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0px;
+    transform: translate(-20%, -20%);
+
+    content: " ";
+    width: 22rem;
+    height: 22rem;
+    border-radius: 22rem;
+    background-color: $color-primary;
+
+    @mixin atMedium {
+      width: 42rem;
+      height: 42rem;
+      border-radius: 42rem;
+    }
+  }
+
+  &__header{
+    position: relative;
+
+    background-color: $color-primary-dark;
+    padding: 2rem 2rem 0;
+  }
+
+  &__title{
+    position: relative;
+    z-index: 3;
+
+    width: max-content;
+    font-size: 2.8rem;
+    font-family: 'Lato';
+    color: $color-secondary;
+    border-bottom: 4px solid $color-secondary;
+
+    @mixin atMedium{
+      font-size: 3.8rem;
+    }
+  }
+
+  &__body{overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+
+    padding: 2rem;
+    
+
+    @mixin atMedium{
+      flex-direction: row;
+    }
+  }
+
+  &__text-box{
+    position: relative;
+    z-index: 3;
+    padding-bottom: 2rem;
+
+    @mixin atMedium{
+      padding-right: 2rem;
+    }
+  }
+
+  &__sub-title{
+    font-size: 2.2rem;
+    color: $color-secondary-light;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+  }
+
+  &__text{
+    margin-bottom: 2rem;
+    text-indent: 1rem;
+    color: $color-primary-light;
+  }
+
+  &__pic-grid{ 
+    position: relative;
+    z-index: 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4px;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    
+    margin: 0 auto;
+    height: max-content;
+    width: max-content;
+    padding: 4px;
+    background-color: $color-primary-light;
+    
+    @mixin atSmall{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @mixin atMedium{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__img-box{
+    display: flex;
+    align-items: center;
+    height: 40vw;
+    width: 40vw;
+    background-color: black;
+
+    @mixin atSmall{
+      width: 20vw;
+      height: 20vw;
+    }
+
+    @mixin atMedium{
+      width: 18vw;
+      height: 18vw;
+    }
+  }
+
+  &__img{
+    
+  }
 }

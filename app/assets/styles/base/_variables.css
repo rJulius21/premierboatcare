@@ -1,4 +1,7 @@
 
+
+
+
 /*  COLORS  */
 $color-primary-light: #e7fef9;
 $color-primary: #5e63fe;
@@ -13,7 +16,7 @@ $bg-light: rgb(255, 255, 255);
 $bg-content-section: rgba($color-primary-light, .5);
 
 /*  TEXT COLORS  */
-$tc-section-heading: #5e63fe;
+$tc-section-heading: #4449d6;
 $tc-white: #f5feff;
 $tc-body-light: rgb(232, 226, 255);
 $tc-body-dark: rgb(13, 7, 36);
@@ -34,7 +37,7 @@ $bs-light-sm: 0 0 1rem 0 $s-light;
 /*  FONT STYLES  */
 $text-heading: 2.8rem/1.1 'Lato', sans-serif;
 $text-sub-heading: 2.2rem/1.1 'Lato', sans-serif;
-$text-body: 1.6rem/1.1 'Lato', sans-serif;
+$text-body: 1.8rem/1.1 'Lato', sans-serif;
 
 /*  MISC VARIABLES  */
 $indent: 2rem;
