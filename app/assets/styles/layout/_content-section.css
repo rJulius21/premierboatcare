@@ -59,23 +59,18 @@
   }
 
   &__panel{
-    
-
     &--full{
       width: 100%;
     }
 
     &--half{
       width: 100%;
-
       @mixin atSmall{
         width: 100%;
       }
-
       @mixin atMedium{
         width: 50%;
       }
-
       @mixin atLarge{
         width: 50%;
       }
@@ -83,15 +78,12 @@
 
     &--third{
       width: 100%;
-
       @mixin atSmall{
         width: 50%;
       }
-
       @mixin atMedium{
         width: 33.3%;
       }
-
       @mixin atLarge{
         width: 33.3%;
       }
@@ -99,20 +91,15 @@
 
     &--quarter{
       width: 50%;
-
       @mixin atSmall{
         width: 50%;
       }
-
       @mixin atMedium{
         width: 25%;
       }
-
       @mixin atLarge{
         width: 25%;
       }
     }
-
   }
-
 }
