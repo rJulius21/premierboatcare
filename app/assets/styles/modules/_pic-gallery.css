@@ -2,67 +2,118 @@
   width: 100%;
 
   &__feature-box{
+    position: relative;
     display: flex;
-
-    width: 100%;
+    width: auto;
     background-color: black;
     padding: 1px;
-    
-    @mixin atLarge{
-      margin: -12rem -10rem 0;
 
+    margin-top: -2rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    
+    @mixin atSmall{
+      margin-top: -9rem;
+    }
+    @mixin atLarge{
+      margin-top: -12rem;
+      margin-left: -10rem;
+      margin-right: -10rem;
+    }
+  }
+
+  &__btn{
+    position: absolute;
+    top: 40%;
+    width: 4rem;
+    height: 4rem;
+    background-color: $color-secondary;
+
+    display: none;
+
+
+    &--left{
+      left: 10%;
+    }
+
+    &--right{
+      right: 10%;
     }
   }
 
   &__feature-img{
     display: block;
     margin: 0 auto;
+    max-width: 100%;
     width: 100%;
-    box-shadow: $bs-dark-lg;
+    
+    @mixin atMedium{
+      width: auto;
+    }
   }
 
-  &__grid-container{ background-color: red;
+  &__grid-container{
     width: 100%;
-    overflow: hidden;
   }
 
   &__grid{
-    overflow: scroll;
-    width: 200%;
+    /* overflow-x: scroll; */
     display: grid;
-    grid-template-columns: repeat(8, 50px);
-    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1rem;
+    justify-content: center;
+    justify-items: center;
     
+    width: 100%;
     padding: 1rem;
-    /* background-image: linear-gradient(to bottom, $color-secondary, $color-secondary-light); */
 
-    transform: translateX(-30rem);
-
+    @mixin atSmall{
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @mixin atMedium{
+      grid-template-columns: repeat(8, 1fr);
+    }
     @mixin atLarge{
       grid-template-columns: repeat(10, 1fr);
-      grid-gap: 2rem;
-      padding: 2rem 10rem;
-
-      margin: 0 -10rem;
     }
   }
 
   &__item{
     display: flex;
     overflow: hidden;
-
+    height: 20vw;
+    width: 20vw;
     border-radius: 15rem;
     box-shadow: $bs-dark-sm;
     transition: all .2s ease-in;
     cursor: pointer; 
+
     &:hover{
       transform: scale(1.05);
       box-shadow: $bs-dark-lg;
     }
 
+    @mixin atSmall{
+      height: 14vw;
+      width: 14vw;
+    }
+    @mixin atMedium{
+      height: 11.5vw;
+      width: 11.5vw;
+    }
+    @mixin atLarge{
+      height: 10rem;
+      width: 10rem;
+    }
+
     &--active{
       filter:brightness(105%)
     }
+  }
+
+  &__thumb{
+    width: 100%;
+    height: auto;
   }
 
 }

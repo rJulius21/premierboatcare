@@ -37,6 +37,8 @@
   &__img{ 
     display: flex;
     max-height: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   &__pages-nav{
