@@ -6,6 +6,10 @@
     margin-bottom: 2rem;
   }
 
+  @mixin atLarge {
+    margin-top: 6rem;
+  }
+
   &__header{
     background-color: $color-primary-dark;
     padding: 1rem;
@@ -23,6 +27,15 @@
     flex-wrap: wrap;
     background-color: $color-primary-light;
     padding: 1rem;
+  }
+
+  &__desc{
+    width: 50%;
+    padding: 2rem;
+  }
+
+  &__link{
+    width: 50%;
   }
 
   &__option{
@@ -45,7 +58,7 @@
   &__text{
     display: flex;
 
-    font-size: 3rem;
+    font-size: 2.4rem;
     width: 50%;
     text-transform: capitalize;
     color: $color-primary-dark;
