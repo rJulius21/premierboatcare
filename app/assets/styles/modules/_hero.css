@@ -16,7 +16,8 @@
 
     grid-column: span 1;
 
-    &--padded{ background-color: rgb(32, 10, 112);
+    &--padded{ 
+      background-color: $color-primary-light;
       grid-column: span 2;
       padding: 3rem;
 
@@ -25,11 +26,13 @@
         height: 30rem;
         width: 30rem;
         padding: 5px;
+        background-color: transparent;
       }
 
       @mixin atMedium{
         grid-column: span 1;
 
+        background-color: $color-primary-light;
         height: inherit;
         width: inherit;
         padding: 3rem;
