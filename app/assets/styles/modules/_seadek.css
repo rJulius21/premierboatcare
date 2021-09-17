@@ -25,6 +25,7 @@
   &__body{
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     background-color: $color-primary-light;
     padding: 3rem;
   }
@@ -36,23 +37,21 @@
   }
 
   &__link{
-    width: max-content;
+    display: flex;
+    width: 100%;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 4px;
     background-color: $color-secondary;
 
-    &::before{
-      content: 'Click here to '
-    }
   }
 
   &__option{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     width: 100%;
-    padding-bottom: 1rem;
 
     @mixin atMedium{
       width: 50%;
@@ -66,10 +65,14 @@
   &__text{
     display: flex;
 
-    font-size: 2.4rem;
-    width: 50%;
+    font-size: 2rem;
+    width: 65%;
     text-transform: capitalize;
     color: $color-primary-dark;
+
+    @mixin atSmall{
+      width: 50%;
+    }
     
     &--alternate{
       text-transform: none;
@@ -85,9 +88,9 @@
 
     height: 7rem;
     width: 7rem;
-    border-radius: 7rem;
+    border-radius: 3px;
     background-color: black;
-    border: 2px solid $color-primary;
+    box-shadow: $bs-dark-sm;
 
     &:not(:last-child){
       margin-right: 1rem;
@@ -100,16 +103,22 @@
     }
 
     &--alternate{
+      
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      margin-top: 1rem;
 
-      height: 10rem;
-      width: 10rem;
+      height: 16rem;
+      width: 20rem;
       border-radius: 3px;
       background-color: black;
-      border: 2px solid $color-primary;
+      box-shadow: $bs-dark-sm;
+      
+      &:not(:last-child){
+        margin-right: 2rem;
+      }
     }
 
     &--alternate-long{
@@ -117,12 +126,13 @@
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      margin-right: 1rem;
 
       height: 10rem;
-      width: 10rem;
+      width: 24rem;
       border-radius: 3px;
       background-color: black;
-      border: 2px solid $color-primary;
+      box-shadow: $bs-dark-sm;
     }
   }
 
@@ -133,14 +143,14 @@
 
     &--alternate{
       display: flex;
-      width: 125%;
-      height: 125%;
+      width: 100%;
+      height: auto;
     }
 
     &--alternate-long{
       display: flex;
-      width: 125%;
-      height: 125%;
+      width: 105%;
+      height: auto;
     }
   }
 }
