@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   box-shadow: $bs-dark-sm;
-  border-bottom-left-radius: 14rem;
+  border-bottom-left-radius: 12rem;
   background-color: $color-primary-dark;
 
     &:first-child{
@@ -74,9 +74,7 @@
     display: flex;
     flex-direction: column;
 
-
     padding: 2rem;
-    
 
     @mixin atMedium{
       flex-direction: row;
@@ -141,7 +139,6 @@
       width: 20vw;
       height: 20vw;
     }
-
     @mixin atMedium{
       width: 18vw;
       height: 18vw;
