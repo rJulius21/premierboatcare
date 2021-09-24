@@ -37,12 +37,17 @@
   }
 
   &__link{
-    display: flex;
+    display: block;
     width: 100%;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 4px;
     background-color: $color-secondary;
+
+    @mixin atMedium {
+      width: 60%;
+    }
   }
 
   &__option{

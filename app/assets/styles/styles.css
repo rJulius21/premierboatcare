@@ -6,6 +6,7 @@
 @import "base/_mixins.css";
 @import "base/_global.css";
 @import "base/_typography.css";
+@import "base/_zanimations.css";
 
 @import "layout/_background-wrapper.css";
 @import "layout/_content-wrapper.css";

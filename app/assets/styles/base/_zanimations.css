@@ -1,0 +1,11 @@
+@keyframes toTopBtn{
+  0% {
+    background-color: $color-secondary;
+  }
+  50% {
+    background-color: $color-secondary-light;
+  }
+  100% {
+    background-color: $color-secondary;
+  }
+}

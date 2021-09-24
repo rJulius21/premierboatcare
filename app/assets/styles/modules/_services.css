@@ -70,7 +70,8 @@
     }
   }
 
-  &__body{overflow: hidden;
+  &__body{
+    overflow: hidden;
     display: flex;
     flex-direction: column;
 
@@ -104,6 +105,13 @@
     color: $color-primary-light;
   }
 
+  &__jump-link{
+    color: $color-primary-dark;
+    background-color: $color-secondary;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+  }
+
   &__pic-grid{ 
     position: relative;
     z-index: 4;
@@ -125,6 +133,10 @@
     }
     @mixin atMedium{
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--small{
+
     }
   }
 
