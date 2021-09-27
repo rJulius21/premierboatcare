@@ -7,8 +7,6 @@ class GalleryImage {
   }
 
   events() {
-    console.log('wtf')
-    console.log(this.current.src)
     this.thumbs.forEach(this.changeSource);
   }
 

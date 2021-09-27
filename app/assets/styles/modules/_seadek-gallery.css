@@ -1,0 +1,62 @@
+.seadek-gallery{
+  display: block;
+  width: 100%;
+  position: relative;
+
+  &__arrow{
+    position: absolute;
+    top: 45%;
+
+    height: 3rem;
+    width: 3rem;
+    background-color: $color-secondary-light;
+
+    animation-name: pop;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    
+    &--left{
+      left: 5px;
+      clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    }
+
+    &--right{
+      right: 5px;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
+    }
+  }
+  
+  &__viewport{
+    overflow: scroll;
+    width: 90%;
+    margin: 0 auto;
+
+    @mixin atMedium{
+      overflow: hidden;
+    }
+  }
+
+  &__slider{
+    display: flex;
+  }
+
+  &__img-row{
+    display: flex;
+  }
+
+  &__img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+    width: max-content;
+    height: 24rem;
+    padding: 0 2px;
+  }
+
+  &__img{
+    width: auto;
+    height: 100%;
+  }
+}

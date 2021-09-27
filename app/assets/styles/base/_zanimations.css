@@ -9,3 +9,18 @@
     background-color: $color-secondary;
   }
 }
+
+@keyframes pop{
+  0%{
+    opacity: 1;
+    transform: scale(1.00);
+  }
+  90%{
+    opacity: 1;
+    transform: scale(1.00);
+  }
+  100%{
+    opacity: 0;
+    transform: scale(3);
+  }
+}

@@ -79,6 +79,7 @@
 
     @mixin atMedium{
       flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
@@ -89,6 +90,10 @@
 
     @mixin atMedium{
       padding-right: 2rem;
+      width: 50%;
+    }
+    @mixin atMedium{
+      width: 40%;
     }
   }
 
@@ -106,10 +111,12 @@
   }
 
   &__jump-link{
+    display: block;
     color: $color-primary-dark;
     background-color: $color-secondary;
     padding: .5rem 1rem;
     border-radius: 3px;
+    line-height: 1.5;
   }
 
   &__pic-grid{ 
