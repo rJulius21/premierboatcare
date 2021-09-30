@@ -25,28 +25,28 @@ class SeadekGallery {
   // RIGHT ARROW FUNCTIONALITY
   scrollRight() {
 
-    if (this.sliderCount < 2000) {
-      let isHeld = false;
 
-      this.rightArr.addEventListener('mousedown', () => {
-        isHeld = true;
-      });
+    let isHeld = false;
 
-      this.rightArr.addEventListener('mouseup', () => {
-        isHeld = false;
-      });
+    this.rightArr.addEventListener('mousedown', () => {
+      isHeld = true;
+    });
 
-      setInterval(() => {
-        if (isHeld) {
-          // Code to loop goes here
-          this.sliderCount -= 2
+    document.addEventListener('mouseup', () => {
+      isHeld = false;
+    });
 
-          console.log(this.sliderCount)
-          this.slider.style.left = `${this.sliderCount}px`;
-          return this.sliderCount
-        }
-      }, 0);
-    }
+    setInterval(() => {
+      if (isHeld) {
+        // Code to loop goes here
+        this.sliderCount -= 2
+
+        console.log(this.sliderCount)
+        this.slider.style.left = `${this.sliderCount}px`;
+        return this.sliderCount
+      }
+    }, 0);
+
 
   }
   ////////////
@@ -59,14 +59,14 @@ class SeadekGallery {
       isHeld = true;
     });
 
-    this.leftArr.addEventListener('mouseup', () => {
+    document.addEventListener('mouseup', () => {
       isHeld = false;
     });
 
     setInterval(() => {
       if (isHeld) {
         // Code to loop goes here
-        this.sliderCount += 1
+        this.sliderCount += 2
 
         console.log(this.sliderCount)
         this.slider.style.left = `${this.sliderCount}px`;

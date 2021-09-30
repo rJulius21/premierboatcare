@@ -62,8 +62,8 @@
     width: max-content;
     font-size: 2.8rem;
     font-family: 'Lato';
-    color: $color-secondary;
-    border-bottom: 4px solid $color-secondary;
+    color: $color-secondary-light;
+    border-bottom: 4px solid $color-secondary-light;
 
     @mixin atMedium{
       font-size: 3.8rem;
@@ -99,7 +99,7 @@
 
   &__sub-title{
     font-size: 2.2rem;
-    color: $color-secondary-light;
+    color: $color-secondary;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
   }

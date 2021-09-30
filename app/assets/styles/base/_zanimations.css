@@ -12,12 +12,18 @@
 
 @keyframes pop{
   0%{
-    opacity: 1;
+    opacity: .5;
   }
   90%{
+    opacity: .5;
+  }
+  91%{
     opacity: 1;
   }
+  95%{
+    opacity: .5;
+  }
   100%{
-    opacity: 0;
+    opacity: 1;
   }
 }
