@@ -162,6 +162,10 @@
       width: 18vw;
       height: 18vw;
     }
+    @mixin atLarge{
+      width: 27rem;
+      height: 27rem;
+    }
   }
 
   &__img{
