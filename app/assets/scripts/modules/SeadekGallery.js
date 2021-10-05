@@ -15,7 +15,7 @@ class SeadekGallery {
 
   events() {
     // console.log test
-    console.log(this.sliderSize)
+    // console.log(this.sliderSize)
 
     // code for this module
     this.scrollRight()
