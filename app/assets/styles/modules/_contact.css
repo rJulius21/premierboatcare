@@ -20,6 +20,10 @@
     padding: 4rem;
     background-color: $color-primary-dark;
     fill: $color-primary-light;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
   }
 
   &__text-box{
