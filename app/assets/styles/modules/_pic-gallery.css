@@ -5,17 +5,20 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
-    display: none;
+    z-index: -1;
+    display: flex;
     align-items: center;
-
+    
     width: 100vw;
     height: 100vh;
     padding: 1px;
     background-color: rgba(0, 0, 0, 0.95);
 
+    opacity: 0;
+
     &--active{
-      display: flex;
+      z-index: 10;
+      opacity: 1;
     }
 
   }
@@ -124,12 +127,10 @@
   &__feature-img{
     display: block;
     margin: 0 auto;
-    width: 100%;
+    max-width: 100%;
     height: min-content;
+    max-height: 100%;
     
-    @mixin atMedium{
-      width: auto;
-    }
   }
 
   &__grid-container{

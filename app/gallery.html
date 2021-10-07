@@ -23,6 +23,83 @@
 
 <body>
 
+  <!-- START HIDDEN ELEMENTS -->
+  <div class="hidden">
+    <!-- START SEADEK SLIDER GALLERY -->
+    <div class="seadek-gallery">
+
+      <div class="seadek-gallery__arrow seadek-gallery__arrow--left"></div>
+      <div class="seadek-gallery__arrow seadek-gallery__arrow--right"></div>
+
+      <!-- START VIEWPORT -->
+      <div class="seadek-gallery__viewport" id="seadekViewport">
+        <div class="seadek-gallery__slider">
+
+          <!-- START IMG ROW -->
+          <div class="seadek-gallery__img-row">
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/a1.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/a2.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/a3.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/a4.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/b1.jpeg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/b2.jpeg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/b3.jpeg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/c1.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/c2.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/c3.jpg" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/d1.JPEG" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/d2.JPEG" alt="" class="seadek-gallery__img">
+            </div>
+
+            <div class="seadek-gallery__img-box">
+              <img src="assets/images/sd-slider/d3.PNG" alt="" class="seadek-gallery__img">
+            </div>
+          </div>
+          <!-- END IMG ROW -->
+
+        </div>
+      </div>
+      <!-- END VIEWPORT -->
+
+    </div>
+    <!-- END SEADEK SLIDER GALLERY -->
+  </div>
+  <!-- END HIDDEN ELEMENTS -->
+
   <!-- START BG WRAPPER -->
   <div class="background-wrapper">
     <div id="top" class="top"></div>
@@ -94,7 +171,7 @@
             </div>
             <div class="content-section__body">
               <div class="pic-gallery">
-                <div class="pic-gallery__feature-box">
+                <div id="galleryFeatured" class="pic-gallery__feature-box">
 
 
                   <div id='picGalleryClose' class="pic-gallery__close"></div>
@@ -103,7 +180,7 @@
                   <div id="picGalleryRArr" class="pic-gallery__feature-arrow pic-gallery__feature-arrow--right">
                   </div>
 
-                  <img id="current" src="assets/images/hero-2.jpg" alt="" class="pic-gallery__feature-img">
+                  <img id="current" src="assets/images/gal-min/job1-1-min.jpg" alt="" class="pic-gallery__feature-img">
                 </div>
 
                 <!-- START THUMBNAIL GRID -->
@@ -294,6 +371,22 @@
   </div>
   <!-- START BG WRAPPER -->
 
+  <script>
+
+    const galleryBox = document.querySelector('#galleryFeatured')
+    const thumbs = document.querySelectorAll(".pic-gallery__thumb")
+    const current = document.querySelector('#current')
+    thumbs.forEach(openGallery)
+
+    function openGallery(item) {
+      item.addEventListener('click', (e) => {
+        current.src = e.target.src
+        galleryBox.classList.add('pic-gallery__feature-box--active')
+        console.log(e.target)
+      })
+    }
+
+  </script>
 </body>
 
 </html>
