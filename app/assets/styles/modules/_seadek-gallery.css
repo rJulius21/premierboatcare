@@ -37,7 +37,7 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 
-    @mixin atMedium{
+    @mixin atLarge{
       overflow: hidden;
     }
   }
