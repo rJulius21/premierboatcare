@@ -23,17 +23,19 @@ class GalleryImage {
     let reelLength = this.thumbs.length
 
     document.addEventListener('click', (e) => {
-      this.thumb = this.thumbs[thumbIndex]
       if (e.target === this.pgRArr && thumbIndex < reelLength) {
         thumbIndex++
+        this.thumb = this.thumbs[thumbIndex]
+        this.current.src = this.thumb.src
       }
       if (e.target === this.pgLArr && thumbIndex <= reelLength) {
         thumbIndex--
+        this.thumb = this.thumbs[thumbIndex]
+        this.current.src = this.thumb.src
       }
-      this.current.src = this.thumb.src
       console.log(reelLength)
       console.log(thumbIndex)
-      return this.thumb
+      // return this.thumb
     })
   }
 
