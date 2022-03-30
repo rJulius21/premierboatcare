@@ -12,7 +12,7 @@
     "kind-of": "^6.0.3",
     "lazysizes": "^5.2.2",
     "lodash": "^4.17.21",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "node-forge": "^0.10.0",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
